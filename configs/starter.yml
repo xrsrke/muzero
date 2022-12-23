@@ -1,0 +1,18 @@
+
+experiment_config:
+  exp_name: starter
+
+dataset_config:
+  batch_size: 512
+
+trainer_config:
+  max_epochs: 30
+
+callbacks:
+  tqdm:
+    refresh_rate: 20
+  checkpoint:
+    monitor: val/epoch/loss
+
+logger:
+  wandb: True

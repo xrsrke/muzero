@@ -1,0 +1,19 @@
+# ignore dev trash
+.hypothesis
+.pytest_cache
+.vscode
+.mypy_cache
+.env
+**/__pycache__
+**/checkpoints
+lightning_logs
+poetry.lock
+
+# ignore large unnecessary files
+data/*
+notebooks/*
+output/*
+
+
+# keep folders that contain .gitkeep
+!**/.gitkeep
