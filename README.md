@@ -1,3 +1,6 @@
+# Updates
+I am currently learning RL and actively working on this project.
+
 # Deep Learning Project Template
 
 This template of a deep learning project where we are using the following `PyTorch Lightning`, `Pydantic` and much more!
