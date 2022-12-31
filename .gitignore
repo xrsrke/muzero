@@ -17,3 +17,7 @@ output/*
 
 # keep folders that contain .gitkeep
 !**/.gitkeep
+env/*
+env
+.vscode
+_proc

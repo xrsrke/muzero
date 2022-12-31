@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "muzero"
+  site-url: "https://xrsrke.github.io/muzero"
+  description: "Implement MuZero from scratch [WORK IN PROGRESS]"
+  repo-branch: develop
+  repo-url: "https://github.com/xrsrke/muzero"
