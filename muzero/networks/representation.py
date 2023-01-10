@@ -20,7 +20,6 @@ class ShortcutProjection(nn.Module):
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.bn(self.conv(x))
 
-
 # %% ../../nbs/09_representation.ipynb 5
 class ResidualBlock(nn.Module):
     def __init__(self, in_channels: int, out_channels: int, stride: int):
@@ -89,15 +88,14 @@ class BottleneckResidualBlock(nn.Module):
         residual = self.shortcut(x)
         out = self.act1(self.bn1(self.conv1(x)))
         out = self.act2(self.bn2(self.conv2(out)))
-        out = self.bn2(self.conv2(out))
+        out = self.bn3(self.conv3(out))
 
         return self.act3(out + residual)
 
-
-# %% ../../nbs/09_representation.ipynb 9
+# %% ../../nbs/09_representation.ipynb 8
 class RepresentationNetwork(nn.Module):
     def __init__(
-        self, img_channels: int, n_blocks: int, n_channels: int,
+        self, img_channels: int, n_blocks: List[int], n_channels: List[int],
         first_kernel_size: int, bottlenecks: Optional[List[int]] = None
     ):
         super().__init__()
