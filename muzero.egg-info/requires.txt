@@ -1,0 +1,6 @@
+pytest
+nbdev
+torch
+einops
+
+[dev]

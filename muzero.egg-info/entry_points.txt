@@ -1,0 +1,2 @@
+[nbdev]
+muzero = muzero._modidx:d
