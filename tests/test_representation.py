@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from muzero.networks.representation import (
+from muzero.nn import (
     ShortcutProjection,
     ResidualBlock,
     BottleneckResidualBlock,

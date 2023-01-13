@@ -1,16 +1,18 @@
+env:
+  id: LunarLander-v2
+  render_mode: human
 
 experiment_config:
-  exp_name: starter
+  exp_name: train_lunarlander
 
 dataset_config:
   batch_size: 512
 
 trainer_config:
   max_epochs: 30
+  max_steps: 100
 
 callbacks:
-  tqdm:
-    refresh_rate: 20
   checkpoint:
     monitor: val/epoch/loss
 

@@ -40,3 +40,6 @@ state space and select the most promising actions
 Resources that i used to implement MuZero - MuZero - Mastering Atari,
 Go, Chess and Shogi by Planning with a Learned Model \| RL Paper
 explained
+
+- MCTS
+  + Recreating DeepMind's AlphaZero - AI Plays Connect 4 - Part 2: Intro to Monte Carlo Tree Search: https://youtu.be/HikhrP5sgQo

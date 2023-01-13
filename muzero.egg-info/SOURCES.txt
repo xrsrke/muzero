@@ -20,4 +20,5 @@ muzero/networks/__init__.py
 muzero/networks/representation.py
 tests/__init__.py
 tests/conftest.py
+tests/test_replay_buffer.py
 tests/test_representation.py

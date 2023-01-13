@@ -2,5 +2,7 @@ pytest
 nbdev
 torch
 einops
+gymnasium
+gymnasium[box2d]
 
 [dev]

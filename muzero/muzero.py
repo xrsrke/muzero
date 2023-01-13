@@ -3,10 +3,12 @@
 # %% auto 0
 __all__ = ['MuzeroConfig']
 
-# %% ../nbs/13_muzero.ipynb 10
+# %% ../nbs/13_muzero.ipynb 8
 from dataclasses import dataclass
 
-# %% ../nbs/13_muzero.ipynb 11
+from .nn import RepresentationNetwork, DynamicsNetwork, PredictionNetwork
+
+# %% ../nbs/13_muzero.ipynb 9
 @dataclass
 class MuzeroConfig:
     action_space: int
